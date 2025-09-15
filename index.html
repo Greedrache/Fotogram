@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header><img class="headerlogo" src="img/Fotogram_Logo.svg" alt="Unser Logo Fotogram"></header>
+    <main>
+        <h1>Dein Persönliches Foto Album</h1>
+        <div class="imgcontainer">
+            <img onclick="openDialog('Adler', 'img/adler.jpeg')" class="mainimgs" src="img/adler.jpeg" alt="Adler">
+            <img onclick="openDialog('Antarktis', 'img/antarktis.jpeg')" class="mainimgs" src="img/antarktis.jpeg" alt="Antarktis">
+            <img onclick="openDialog('Papagei', 'img/papagei.jpeg')" class="mainimgs" src="img/papagei.jpeg" alt="Papagei">
+            <img onclick="openDialog('Pinguin', 'img/pinguin.jpeg')" class="mainimgs" src="img/pinguin.jpeg" alt="Pinguin">
+            <img onclick="openDialog('Peking, China', 'img/download.jpeg')" class="mainimgs" src="img/download.jpeg" alt="Peking, China">
+            <img onclick="openDialog('Hai', 'img/hai.jpeg')" class="mainimgs" src="img/hai.jpeg" alt="Hai">
+            <img onclick="openDialog('Huhn', 'img/huhn.jpeg')" class="mainimgs" src="img/huhn.jpeg" alt="Huhn">
+            <img onclick="openDialog('Hammerhai', 'img/hammerhai.jpeg')" class="mainimgs" src="img/hammerhai.jpeg" alt="Hammerhai">
+            <img onclick="openDialog('Schildkröte', 'img/schildkröte.jpeg')" class="mainimgs" src="img/schildkröte.jpeg" alt="Schildkröte">
+            <img onclick="openDialog('Schlange', 'img/schlange.jpeg')" class="mainimgs" src="img/schlange.jpeg" alt="Schlange">
+            <img onclick="openDialog('Dinosaurier', 'img/dinosaurier.jpeg')" class="mainimgs" src="img/dinosaurier.jpeg" alt="Dinosaurier">
+            <img onclick="openDialog('Wal', 'img/wal.jpeg')" class="mainimgs" src="img/wal.jpeg" alt="Wal">
+            <img onclick="openDialog('Frosch', 'img/frosch.jpeg')" class="mainimgs" src="img/frosch.jpeg" alt="Frosch">
+        </div>
+    </main>
+
+    <dialog aria-labelledby="dialogTitle" id="birddialog" aria-describedby="dialogdescription">
+        <h2 id="dialogTitle">Placeholder</h2>
+        <img class="dialogimg" src="" alt="">
+        <footer>
+            
+        </footer>
+    </dialog>
+
+    <footer>
+        <img class="footerlogo" src="img/developerakademielogo.png" alt="Logo der Akademie">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

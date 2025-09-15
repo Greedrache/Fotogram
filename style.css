@@ -1,0 +1,105 @@
+header {
+    background-color: #0a222a;
+    box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.5);
+}
+
+.headerlogo {
+    width: 300px;
+    padding: 15px;
+    margin-left: 24px;
+}
+
+main {
+    background-color: #051920;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 96px - 96px);
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    /* Reduzierter oberer Abstand */
+    margin-bottom: 20px;
+    /* Optional: Abstand nach unten für bessere Balance */
+}
+
+
+footer {
+    background-color: #0a222a;
+    justify-content: center;
+    display: flex;
+}
+
+.footerlogo {
+    padding: 30px;
+    gap: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.mainimgs {
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    height: 180px;
+    width: 180px;
+    border: 3px solid #145d75;
+}
+
+.mainimgs:hover {
+    border: 3px solid #cdd8db;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 60px;
+    margin-left: 60px;
+    gap: 12px;
+    max-height: 100%;
+    overflow-y: hidden;
+    margin-top: 100px;
+}
+
+dialog {
+    background-color: #0d323f;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 500px;
+    width: 400px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    /* Halbtransparenter Hintergrund */
+    border: none;
+    /* Kein Rand für das Backdrop */}
+
+    .dialogimg {
+        width: 380px;
+        height: 250px;
+        object-fit: cover;
+        margin-right: 10px;
+        margin-left: 10px;
+        box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        display: flex;
+    }
+
+    h2 {
+        margin-left: 10px;
+    }
