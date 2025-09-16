@@ -13,10 +13,11 @@ main {
     background-color: #051920;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 96px - 96px);
+    height: auto;
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 h1 {
@@ -27,16 +28,16 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     margin-top: 10px;
-    /* Reduzierter oberer Abstand */
     margin-bottom: 20px;
-    /* Optional: Abstand nach unten für bessere Balance */
+    text-align: center;
 }
-
 
 footer {
     background-color: #0a222a;
     justify-content: center;
     display: flex;
+    margin-bottom: 0;
+    margin-top: 64px;
 }
 
 .footerlogo {
@@ -47,6 +48,10 @@ footer {
 body {
     margin: 0;
     font-family: "Archivo Black", sans-serif;
+    background-color: #051920;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .mainimgs {
@@ -78,28 +83,102 @@ dialog {
     background-color: #0d323f;
     color: white;
     border-radius: 20px;
-    border: none;
+    border: 1px solid #0a222a;
     height: 500px;
     width: 400px;
 }
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
-    /* Halbtransparenter Hintergrund */
     border: none;
-    /* Kein Rand für das Backdrop */}
+}
+
+.dialogimg {
+    width: 380px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.arrow {
+    color: #db5959;
+    background-color: #1d2024;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pfeilfeld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+#imageCounter {
+    color: white;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media(max-width: 590px) {
+    .headerlogo {
+        width: 200px;
+        padding: 10px;
+        margin-left: 12px;
+    }
+
+    h1 {
+        justify-content: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .footerlogo {
+        padding: 20px;
+        gap: 10px;
+        width: 180px;
+    }
+
+    main {
+        height: auto;
+        margin-bottom: 64px;
+    }
+
+    dialog {
+        height: 400px;
+        width: 250px;
+    }
 
     .dialogimg {
-        width: 380px;
-        height: 250px;
-        object-fit: cover;
-        margin-right: 10px;
-        margin-left: 10px;
-        box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.5);
-        align-items: center;
-        display: flex;
+        width: 230px;
+        height: 150px;
     }
 
-    h2 {
-        margin-left: 10px;
+    #imageCounter {
+        font-size: 16px;
     }
+}
