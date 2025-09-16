@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const d = document.getElementById("birddialog"), t = d.querySelector("h2"), i = d.querySelector("img"), c = document.getElementById("imageCounter");
-  const imgs = ["Adler", "Antarktis", "Papagei", "Pinguin", "Download", "Hai", "Huhn", "Hammerhai", "Schildkröte", "Schlange", "Dinosaurier", "Wal", "Frosch"]
-    .map((n, x) => ({ title: n.replace('download', 'Peking, China'), src: `img/${n}.jpeg`, x }));
+  const imgs = ["adler","antarktis","papagei","pinguin","download","hai","huhn","hammerhai","schildkröte","schlange","dinosaurier","wal","frosch"]
+    .map((n,x)=>({title:(n=="download"?"Peking, China":n.charAt(0).toUpperCase()+n.slice(1)),src:`img/${n}.jpeg`,x}));
   let x = 0;
   const show = () => {
     let { title, src } = imgs[x];
