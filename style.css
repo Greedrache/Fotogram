@@ -24,7 +24,6 @@ h1 {
     color: white;
     display: flex;
     justify-content: center;
-    font-family: "Archivo Black", sans-serif;
     font-size: 50px;
     font-weight: bold;
     margin-top: 10px;
@@ -47,7 +46,7 @@ footer {
 
 body {
     margin: 0;
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: #051920;
     display: flex;
     flex-direction: column;
@@ -141,6 +140,11 @@ h2 {
 
 .rotate {
     transform: rotate(180deg);
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("fonts/Raleway-Regular.ttf") format("truetype");
 }
 
 @media(max-width: 590px) {
