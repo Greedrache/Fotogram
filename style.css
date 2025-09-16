@@ -51,6 +51,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .mainimgs {
@@ -143,8 +145,8 @@ h2 {
 }
 
 @font-face {
-  font-family: "Raleway", sans-serif;
-  src: url("fonts/Raleway-Regular.ttf") format("truetype");
+    font-family: "Raleway", sans-serif;
+    src: url("fonts/Raleway-Regular.ttf") format("truetype");
 }
 
 @media(max-width: 590px) {
